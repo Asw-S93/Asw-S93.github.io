@@ -88,6 +88,8 @@
       }
 
     </style>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
   </head>
 
   <body>
@@ -120,6 +122,8 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+    // Get a reference to the storage service, which is used to create references in your storage bucket
+    var storage = firebase.storage();
 </script>
 const firebaseConfig = {
   apiKey: "AIzaSyDcRyFixeRziPV40W1HhXUvaj0KrTIGvW4",
