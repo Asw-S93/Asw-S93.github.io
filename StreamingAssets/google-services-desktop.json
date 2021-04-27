@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "469177701763",
+    "firebase_url": "https://hzm-vrt1.firebaseio.com",
+    "project_id": "hzm-vrt1",
+    "storage_bucket": "hzm-vrt1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469177701763:android:705a98fa9b47aa4cd892b6",
+        "android_client_info": {
+          "package_name": "com.Vizara.HZM_VR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469177701763-jr26ahk4mfgn9576b17qif5v7v3hgm35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwNPrXy4Jc-jAyB50hBQ70HEUYLkrpt6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469177701763-jr26ahk4mfgn9576b17qif5v7v3hgm35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

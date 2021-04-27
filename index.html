@@ -88,8 +88,6 @@
       }
 
     </style>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
   </head>
 
   <body>
@@ -99,50 +97,11 @@
       <div class="spinner"></div>
       <div class="progress"><div class="full"></div></div>
     </div>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDcRyFixeRziPV40W1HhXUvaj0KrTIGvW4",
-    authDomain: "hzm-vrt1.firebaseapp.com",
-    databaseURL: "https://hzm-vrt1.firebaseio.com",
-    projectId: "hzm-vrt1",
-    storageBucket: "hzm-vrt1.appspot.com",
-    messagingSenderId: "469177701763",
-    appId: "1:469177701763:web:e0c53224bd7f8047d892b6",
-    measurementId: "G-0YFMSVBWGF"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-    // Get a reference to the storage service, which is used to create references in your storage bucket
-    var storage = firebase.storage();
-    const firebaseConfig = {
-  apiKey: "AIzaSyDcRyFixeRziPV40W1HhXUvaj0KrTIGvW4",
-  authDomain: "hzm-vrt1.firebaseapp.com",
-  databaseURL: "https://hzm-vrt1.firebaseio.com",
-  projectId: "hzm-vrt1",
-  storageBucket: "hzm-vrt1.appspot.com",
-  messagingSenderId: "469177701763",
-  appId: "1:469177701763:web:e0c53224bd7f8047d892b6",
-  measurementId: "G-0YFMSVBWGF"
-};
-</script>
-
-
-
   </body>
 
   <script src="Build/UnityLoader.js"></script>
   <script>
-  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/HZM_WebVR_1.04.json", {onProgress: UnityProgress});
+  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/27th_April_21_HZM_WebVR_Demo.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
       return;
@@ -161,6 +120,11 @@
       }, 2000);
     }
   }
+  UnityLoader.instantiate("unityContainer", "Build/27th_April_21_HZM_WebVR_Demo.json", {
+    Module: {
+        "webglContextAttributes": {"preserveDrawingBuffer": true},
+    }
+});
   </script>
 
 </html>
